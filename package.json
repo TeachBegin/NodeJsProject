@@ -4,7 +4,8 @@
   "description": "My project gitProject",
   "main": "babel.web.js",
   "scripts": {
-    "web": "nodemon ./babel.web.js"
+    "webstart": "node ./web/webserver.js",
+    "webbuild": "NODE_ENV=production webpack --verbose --display-error-details --progress --config ./config/prod.webpack.config.js"
   },
   "repository": {
     "type": "git",
