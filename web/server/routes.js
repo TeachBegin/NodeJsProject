@@ -10,5 +10,5 @@ module.exports = (express, app, config) => {
         res.render('index', { title: 'Base Scaffold' })
   })
 
-  app.use('/name', ruter)
+  app.use('/name', router)
 }
